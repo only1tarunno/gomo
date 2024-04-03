@@ -459,7 +459,7 @@ a.topinfo-content {
   margin-top: -510px;
 }
 .testimonial-content {
-  box-shadow: 0px 10px 10px 0px #0000004a;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
   padding: 40px;
   background: #fff;
   border-radius: 5px;
@@ -694,6 +694,21 @@ ul li {
   color: #ffffff;
   margin: 0;
 }
+.service-5 {
+  background: url(../images/s5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service-6 {
+  background: url(../images/s6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.service-7 {
+  background: url(../images/s7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .service-img {
   background: #7fca35;
   height: 56px;
@@ -707,3 +722,82 @@ ul li {
   max-width: 28px;
 }
 /* services end  */
+
+/* single service page start  */
+#single-hero {
+  background: url(../images/singlebanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  position: relative;
+  z-index: -10;
+}
+#single-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  background-color: #003c71;
+  z-index: -1;
+}
+
+.feature-banner-content {
+  text-align: center;
+  align-items: center;
+}
+#feature-banner {
+  background: url(../images/featurebanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+/* single service end  */
+
+/* -------------------contact page start ----------------------- */
+.form-content {
+  background-color: #ffffff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 5px;
+}
+
+form label {
+  color: #54595f;
+  font-weight: 700;
+}
+
+.form-control {
+  background-color: #f5f8fc;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.form-control:focus {
+  background-color: #f5f8fc;
+  box-shadow: none;
+}
+
+.location-card {
+  background-color: #ffffff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.location-card h3 {
+  color: #7fca35;
+}
+.location-card p {
+  color: #54595f;
+}
+
+.location-card a {
+  color: #54595f;
+  display: block;
+  text-decoration: none;
+}
