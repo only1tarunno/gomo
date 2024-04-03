@@ -1,0 +1,70 @@
+@media (max-width: 1180px) {
+  .offcanvas {
+    width: 300px !important;
+  }
+  .offcanvas-start-lg {
+    top: 0;
+    left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .ct-120 {
+    padding-top: 100px;
+  }
+  .cb-120 {
+    padding-bottom: 100px;
+  }
+  .topingos-content {
+    justify-content: center;
+  }
+  .topinfo-box {
+    gap: 0 10px;
+  }
+  .topinfo-box-2 {
+    gap: 0 10px;
+    flex-direction: row;
+  }
+  .features-row {
+    gap: 20px 0;
+  }
+  .about-row {
+    gap: 30px 0;
+  }
+  .achivement-row {
+    padding-top: 30px;
+    gap: 30px 0;
+  }
+  .sponsor-row {
+    flex-wrap: wrap;
+  }
+  
+}
+@media (max-width: 991.98px) {
+  .quote-row{
+    align-items: center;
+    text-align: center;
+    gap: 30px 0;
+  }
+  .footer-row{
+    gap: 80px 0;
+  }
+  .copyright-list {
+
+    justify-content: center;
+
+  }
+  .copyright-content {
+
+    justify-content: center;
+
+  }
+  .copyright-row{
+    gap: 10px;
+  }
+  .sponsor-row{
+    gap: 20px 0;
+  }
+}
