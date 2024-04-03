@@ -435,6 +435,71 @@ a.topinfo-content {
   gap: 16px;
 }
 /* choose end  */
+/* testimonial start  */
+#testimonial {
+}
+.testimonial-bgimg {
+  position: relative;
+  z-index: -1;
+}
+.testimonial-bgimg {
+}
+
+.testimonial-below-img {
+  position: absolute;
+  z-index: -10;
+  bottom: -50px;
+  left: -10px;
+}
+#testimonial-content {
+  margin-top: -510px;
+}
+.testimonial-content {
+  box-shadow: 0px 10px 10px 0px #0000004a;
+  padding: 40px;
+  background: #fff;
+  border-radius: 5px;
+}
+.testimonial-content > h6 {
+  color: #81b441;
+}
+.testimonial-content > h2 {
+  padding: 20px 0;
+}
+.hr-testimonial {
+  width: 50px;
+  opacity: 1;
+  height: 0px;
+  border: none;
+  border-top: 4px solid #81b441;
+}
+.testimonial-para {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.testimonial-para p {
+  width: 86%;
+  color: #0000007c;
+  text-align: center;
+}
+.comma-img {
+  background-color: #0071c5;
+  height: 80px;
+  width: 80px;
+  border-radius: 5px 5px 5px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testomonial-profile h6 {
+  padding-top: 25px;
+}
+.testomonial-profile p {
+  color: #81b441;
+}
+/* testimonial end */
 /* insight start  */
 #insight {
 }
@@ -569,3 +634,29 @@ ul li {
   max-width: 7px;
 }
 /* copyright end */
+
+/* ------------------------about us page ------------------------ */
+
+/* banner  */
+#banner {
+  background-color: #0071c5;
+}
+.banner-row {
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+  color: #fff;
+}
+.banner-row p {
+  color: #fff;
+}
+.banner-row h2 {
+  color: #fff;
+  font-weight: 600;
+}
+/* banner end  */
+/* about start  */
+.about-row h4 {
+  color: #7fca35;
+}
+/* about end  */
