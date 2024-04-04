@@ -1138,3 +1138,49 @@ form label {
 .accordion-item {
   border: 1px solid #f5f8fc;
 }
+
+.sponsor ul {
+  margin-bottom: 0;
+  width: 1520px;
+  gap: 20px;
+}
+
+.main-sponsor-images {
+  animation: 40s linear infinite main-sponsor-images_main;
+}
+
+.absolue-sponsor-images {
+  margin-top: -45px;
+  transform: translateX(1520px);
+  animation: 40s linear infinite absolue-sponsor-images_absolute;
+}
+
+@keyframes main-sponsor-images_main {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-1520px);
+  }
+}
+
+@keyframes absolue-sponsor-images_absolute {
+  from {
+    transform: translateX(1520px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.sponsor img {
+  width: 170px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sponsor img:hover {
+  scale: 1.07;
+}

@@ -1,502 +1,880 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Moving Planner</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
     <!-- font awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- custom css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/media.css" />
-    <link rel="icon" href="favicon.png">
-</head>
+    <link rel="icon" href="favicon.png" />
+  </head>
 
-<body>
+  <body>
     <!-- top info start -->
     <section id="topInfo">
-        <div class="container">
-            <div class="row topinfo-row">
-                <div class="col-lg-12">
-                   <div class="topingos-content c-gap">
-                    <div class="topinfo-box c-gap">
-                        <a class="topinfo-content" href="tel:+622120022012"><img src="images/phone.svg"
-                                class="img-fluid" alt="phone">+(62)21 2002-2012</a>
-                        <a class="topinfo-content" href="mailto:support@yourdomain.tld"><img src="images/mail.svg"
-                                class="img-fluid" alt="mail">support@yourdomain.tld</a>
-                    </div>
-                    <div class="topinfo-box-2 c-gap ">
-                        <a class="topinfo-content" href="#"><img src=" images/pin.svg" class="img-fluid"
-                                alt="location">Find Coverage</a>
-                        <a class="topinfo-content" href="#"><img src="images/user.svg" class="img-fluid" alt="mail">My
-                            Account</a>
-                    </div>
-                   </div>
-                </div>
+      <div class="container">
+        <div class="row topinfo-row">
+          <div class="col-lg-12">
+            <div class="topingos-content c-gap">
+              <div class="topinfo-box c-gap">
+                <a class="topinfo-content" href="tel:+622120022012"
+                  ><img
+                    src="images/phone.svg"
+                    class="img-fluid"
+                    alt="phone"
+                  />+(62)21 2002-2012</a
+                >
+                <a class="topinfo-content" href="mailto:support@yourdomain.tld"
+                  ><img
+                    src="images/mail.svg"
+                    class="img-fluid"
+                    alt="mail"
+                  />support@yourdomain.tld</a
+                >
+              </div>
+              <div class="topinfo-box-2 c-gap">
+                <a class="topinfo-content" href="#"
+                  ><img
+                    src=" images/pin.svg"
+                    class="img-fluid"
+                    alt="location"
+                  />Find Coverage</a
+                >
+                <a class="topinfo-content" href="#"
+                  ><img src="images/user.svg" class="img-fluid" alt="mail" />My
+                  Account</a
+                >
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- top info end -->
-     <!-- navbar start -->
-     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container">
-                <a class="navbar-brand" href="/"><img src="images/logo.svg" class="img-fluid" alt=""></a>
-                <div class="d-flex ms-auto d-lg-none d-block mx-4">
-                    <a href="#" class="btn cs-btn">Get a Quote</a>
-                </div>
-                <a class="btn navbar-toggler sm-btn border-0" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <img src="images/mune.svg" class="img-fluid" alt="menu icon">
-                </a>
-                <div class="offcanvas offcanvas-start-lg  " tabindex="-1" id="offcanvasExample"
-                    aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header d-flex d-lg-none justify-content-end">
-
-                        <a href="javascript:void(0) " class="text-reset p-0 float-start" data-bs-dismiss="offcanvas"
-                            aria-label="close">
-                            
-                        </a>
-                    </div>
-                    <div class="offcanvas-body p-lg-0">
-                        <a class="navbar-brand d-lg-none d-block oc-logo" href="/index.html"><img
-                                src="images/logo.svg" class="img-fluid" alt=""></a>
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link activex" aria-current="page" href="/index.html">Home</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" aria-current="page" href="/about.html">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/services.html">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/contact.html">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/page.html">Page</a>
-                            </li>
-                        </ul>
-                        <div class="ms-auto d-lg-block d-none nav-pro-btn">
-                            <a href="#" class="btn cs-btn">Get a Quote</a>
-                        </div>
-
-                    </div>
-                </div>
+    <!-- navbar start -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="/"
+            ><img src="images/logo.svg" class="img-fluid" alt=""
+          /></a>
+          <div class="d-flex ms-auto d-lg-none d-block mx-4">
+            <a href="#" class="btn cs-btn">Get a Quote</a>
+          </div>
+          <a
+            class="btn navbar-toggler sm-btn border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <img src="images/mune.svg" class="img-fluid" alt="menu icon" />
+          </a>
+          <div
+            class="offcanvas offcanvas-start-lg"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header d-flex d-lg-none justify-content-end">
+              <a
+                href="javascript:void(0) "
+                class="text-reset p-0 float-start"
+                data-bs-dismiss="offcanvas"
+                aria-label="close"
+              >
+              </a>
             </div>
-        </nav>
+            <div class="offcanvas-body p-lg-0">
+              <a
+                class="navbar-brand d-lg-none d-block oc-logo"
+                href="/index.html"
+                ><img src="images/logo.svg" class="img-fluid" alt=""
+              /></a>
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link activex"
+                    aria-current="page"
+                    href="/index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/about.html"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/services.html"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/contact.html"
+                    >Contact Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/page.html"
+                    >Page</a
+                  >
+                </li>
+              </ul>
+              <div class="ms-auto d-lg-block d-none nav-pro-btn">
+                <a href="#" class="btn cs-btn">Get a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- navbar end -->
     <!-- main start -->
     <main>
-   <!-- banner start -->
-   <section id="banner">
-    <div class="container">
-        <div class="row banner-row justify-content-between align-items-center">
+      <!-- banner start -->
+      <section id="banner">
+        <div class="container">
+          <div
+            class="row banner-row justify-content-between align-items-center"
+          >
             <div class="col-md-12 col-lg-5">
-                <p><a href="/">Home</a> <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span> Moving Planner</p>
-                <h2>Moving Planner</h2>
+              <p>
+                <a href="/">Home</a>
+                <span class="arrow"
+                  ><i class="fa-solid fa-chevron-right"></i
+                ></span>
+                Moving Planner
+              </p>
+              <h2>Moving Planner</h2>
             </div>
-            <div class="col-md-12 col-lg-4"><h3 class="text-lg-end">Let us move you with honesty and greatness.</h3></div>
+            <div class="col-md-12 col-lg-4">
+              <h3 class="text-lg-end">
+                Let us move you with honesty and greatness.
+              </h3>
+            </div>
+          </div>
         </div>
-    </div>
-   </section>
-   <!-- banner end  -->
+      </section>
+      <!-- banner end  -->
 
-   <!-- about  start  -->
-   <section id="about" class="ct-120 cb-120">
-    <div class="container">
-        <div class="row about-row gap-2 justify-content-between align-items-center">
-            <div class=" col-lg-6">
-                <h4>Who we are</h4>
-                <h2>The quality shows in every move we make.</h2>
-            </div>
-            <div class=" col-lg-5">
-                <p>Fusce finibus interdum inceptos consectetur vitae luctus eu. Pharetra dui maximus class nascetur volutpat eleifend facilisis adipiscing. Magna mi phasellus facilisis donec tortor consectetuer vel pretium duis.</p>
-                <a href="#" class="btn cs-btn">Discover more</a>
-            </div>
-            <div class="col-12" >
-                <div class="about-video">
-                    <img src="images/aboutImg.jpg" class="img-fluid w-100 ct-40"  data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                <img src="images/play.png" class="play-btn"  data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                 <!-- Modal -->
-                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                 aria-hidden="true">
-                 <div class="modal-dialog modal-dialog-centered">
-                     <div class="modal-content">
-                         <div class="modal-body">
-                             <div class="work_video">
-                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe width="100%" height="600" src="https://www.youtube.com/embed/K87aFjB7Ff0?si=yadoXLVeD9sdeZEK"  allowfullscreen></iframe>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-             <!-- Modal -->
-                </div>
-            </div>
-        </div>
-    </div>
-   </section>
-   <!-- about end  -->
-    <!-- process1 start -->
-    <section id="process" class="ct-120 cb-120">
+      <!-- about  start  -->
+      <section id="about" class="ct-120 cb-120">
         <div class="container">
-            <div class="row process-row align-items-center">
-                <div class="col-lg-6">
-                    <div class="process-img">
-                        <img src="images/process1.jpg" class="img-fluid w-100" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                <div class="process-content">
-                    <h5><span><img src="images/process1Icon.png" height="20px" width="20px" alt=""></span>1 Month before moving</h5>
-                    <h2>Complete the Document & Set Budget</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elittellus, luctus nec ullamcorper mattis, pulvinar.</p>
-                    <ul>
-                        <li><span><img src="images/check.svg" height="16px" width="16px" alt=""></span>Nostra gravida dui a</li>
-                        <li><span><img src="images/check.svg" height="16px" width="16px" alt=""></span>Habitasse praesent natoque etiam</li>
-                        <li><span><img src="images/check.svg" height="16px" width="16px" alt=""></span>Turpis fames egestas sociosqu</li>
-                        <li><span><img src="images/check.svg" height="16px" width="16px" alt=""></span>Consectetuer consequat ultrices erat</li>
-                    </ul>
-                </div>
-                </div>
+          <div
+            class="row about-row gap-2 justify-content-between align-items-center"
+          >
+            <div class="col-lg-6">
+              <h4>Who we are</h4>
+              <h2>The quality shows in every move we make.</h2>
             </div>
+            <div class="col-lg-5">
+              <p>
+                Fusce finibus interdum inceptos consectetur vitae luctus eu.
+                Pharetra dui maximus class nascetur volutpat eleifend facilisis
+                adipiscing. Magna mi phasellus facilisis donec tortor
+                consectetuer vel pretium duis.
+              </p>
+              <a href="#" class="btn cs-btn">Discover more</a>
+            </div>
+            <div class="col-12">
+              <div class="about-video">
+                <img
+                  src="images/aboutImg.jpg"
+                  class="img-fluid w-100 ct-40"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                />
+                <img
+                  src="images/play.png"
+                  class="play-btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                />
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="work_video">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe
+                              width="100%"
+                              height="600"
+                              src="https://www.youtube.com/embed/K87aFjB7Ff0?si=yadoXLVeD9sdeZEK"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- process1 end -->
-    <!-- process2 start -->
-    <section id="process2" class="ct-120 cb-120">
+      </section>
+      <!-- about end  -->
+      <!-- process1 start -->
+      <section id="process" class="ct-120 cb-120">
         <div class="container">
-            <div class="row process-row align-items-center">
-                <div class="col-lg-6">
-                    <div class="process-content" id="process-content">
-                        <h5><span><img src="images/process1Icon.png" height="20px" width="20px" alt=""></span>2 Weeks before moving</h5>
-                        <h2>Start Packing Your Stuff.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elittellus, luctus nec ullamcorper mattis, pulvinar.</p>
-                        <ul>
-                            <li><span><img src="images/check.svg" height="16px" width="16px" alt=""></span>Nostra gravida dui a</li>
-                            <li><span><img src="images/check.svg" height="16px" width="16px" alt=""></span>Habitasse praesent natoque etiam</li>
-                            <li><span><img src="images/check.svg" height="16px" width="16px" alt=""></span>Turpis fames egestas sociosqu</li>
-                            <li><span><img src="images/check.svg" height="16px" width="16px" alt=""></span>Consectetuer consequat ultrices erat</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="process-img">
-                        <img src="images/process2.jpg" class="img-fluid w-100" alt="">
-                    </div>
-                </div>
-                
+          <div class="row process-row align-items-center">
+            <div class="col-lg-6">
+              <div class="process-img">
+                <img src="images/process1.jpg" class="img-fluid w-100" alt="" />
+              </div>
             </div>
+            <div class="col-lg-6">
+              <div class="process-content">
+                <h5>
+                  <span
+                    ><img
+                      src="images/process1Icon.png"
+                      height="20px"
+                      width="20px"
+                      alt="" /></span
+                  >1 Month before moving
+                </h5>
+                <h2>Complete the Document & Set Budget</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elittellus, luctus nec ullamcorper mattis, pulvinar.
+                </p>
+                <ul>
+                  <li>
+                    <span
+                      ><img
+                        src="images/check.svg"
+                        height="16px"
+                        width="16px"
+                        alt="" /></span
+                    >Nostra gravida dui a
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="images/check.svg"
+                        height="16px"
+                        width="16px"
+                        alt="" /></span
+                    >Habitasse praesent natoque etiam
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="images/check.svg"
+                        height="16px"
+                        width="16px"
+                        alt="" /></span
+                    >Turpis fames egestas sociosqu
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="images/check.svg"
+                        height="16px"
+                        width="16px"
+                        alt="" /></span
+                    >Consectetuer consequat ultrices erat
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- process2 end -->
-     <!-- cta start -->
-     <section id="cta">
+      </section>
+      <!-- process1 end -->
+      <!-- process2 start -->
+      <section id="process2" class="ct-120 cb-120">
         <div class="container">
-            <div class="row cta-row align-items-center">
-                <div class="col-lg-6 mx-auto">
-                    <div class="cta-content text-center c-gap ">
-                        <h2>The way to move. The way to care.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus Gnec
-                            ullamcorper mattis, pulvinar dapibus leo.</p>
-                        <a href="#" class="btn cs-btn cta-btn">Discover More</a>
-                    </div>
-                </div>
+          <div class="row process-row align-items-center">
+            <div class="col-lg-6">
+              <div class="process-content" id="process-content">
+                <h5>
+                  <span
+                    ><img
+                      src="images/process1Icon.png"
+                      height="20px"
+                      width="20px"
+                      alt="" /></span
+                  >2 Weeks before moving
+                </h5>
+                <h2>Start Packing Your Stuff.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elittellus, luctus nec ullamcorper mattis, pulvinar.
+                </p>
+                <ul>
+                  <li>
+                    <span
+                      ><img
+                        src="images/check.svg"
+                        height="16px"
+                        width="16px"
+                        alt="" /></span
+                    >Nostra gravida dui a
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="images/check.svg"
+                        height="16px"
+                        width="16px"
+                        alt="" /></span
+                    >Habitasse praesent natoque etiam
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="images/check.svg"
+                        height="16px"
+                        width="16px"
+                        alt="" /></span
+                    >Turpis fames egestas sociosqu
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="images/check.svg"
+                        height="16px"
+                        width="16px"
+                        alt="" /></span
+                    >Consectetuer consequat ultrices erat
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div class="col-lg-6">
+              <div class="process-img">
+                <img src="images/process2.jpg" class="img-fluid w-100" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- cta end -->
-     <!-- process3 start -->
-     <section id="process" class="ct-120 cb-120">
+      </section>
+      <!-- process2 end -->
+      <!-- cta start -->
+      <section id="cta">
         <div class="container">
-            <div class="row process-row align-items-center">
-                <div class="col-lg-6">
-                    <div class="process-img">
-                        <img src="images/process3.jpg" class="img-fluid w-100" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                <div class="process-content">
-                    <h5><span><img src="images/truck.svg" height="20px" width="26px" alt=""></span>Move Out</h5>
-                    <h2>Moving In To Your New Home</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elittellus, luctus nec ullamcorper mattis, pulvinar.</p>
-                    <a href="#" class="btn cs-btn">Track your shipment</a>
-                </div>
-                </div>
+          <div class="row cta-row align-items-center">
+            <div class="col-lg-6 mx-auto">
+              <div class="cta-content text-center c-gap">
+                <h2>The way to move. The way to care.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus Gnec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+                <a href="#" class="btn cs-btn cta-btn">Discover More</a>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- process3 end -->
-     <!-- process4 start -->
-     <section id="process2" class="ct-120 cb-120">
+      </section>
+      <!-- cta end -->
+      <!-- process3 start -->
+      <section id="process" class="ct-120 cb-120">
         <div class="container">
-            <div class="row process-row align-items-center">
-                <div class="col-lg-6">
-                    <div class="process-content" id="process-content">
-                        <h5><span><img src="images/process1Icon.png" height="20px" width="20px" alt=""></span>Move in</h5>
-                        <h2>Unpack your stuff</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elittellus, luctus nec ullamcorper mattis, pulvinar.</p>
-                        <ul>
-                            <li><span><img src="images/check.svg" height="16px" width="16px" alt=""></span>Nostra gravida dui a</li>
-                            <li><span><img src="images/check.svg" height="16px" width="16px" alt=""></span>Habitasse praesent natoque etiam</li>
-                            <li><span><img src="images/check.svg" height="16px" width="16px" alt=""></span>Turpis fames egestas sociosqu</li>
-                            <li><span><img src="images/check.svg" height="16px" width="16px" alt=""></span>Consectetuer consequat ultrices erat</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 ">
-                    <div class="process-img">
-                        <img src="images/process4.jpg" class="img-fluid w-100" alt="">
-                    </div>
-                </div>
-                
+          <div class="row process-row align-items-center">
+            <div class="col-lg-6">
+              <div class="process-img">
+                <img src="images/process3.jpg" class="img-fluid w-100" alt="" />
+              </div>
             </div>
+            <div class="col-lg-6">
+              <div class="process-content">
+                <h5>
+                  <span
+                    ><img
+                      src="images/truck.svg"
+                      height="20px"
+                      width="26px"
+                      alt="" /></span
+                  >Move Out
+                </h5>
+                <h2>Moving In To Your New Home</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elittellus, luctus nec ullamcorper mattis, pulvinar.
+                </p>
+                <a href="#" class="btn cs-btn">Track your shipment</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- process4 end -->
-     <!-- discount start -->
-     <section id="discount">
+      </section>
+      <!-- process3 end -->
+      <!-- process4 start -->
+      <section id="process2" class="ct-120 cb-120">
         <div class="container">
-            <div class="row dicount-row align-items-center">
-                <div class="col-lg-6">
-                    <div class="discount-content c-gap">
-                        <h4>Plan Your Move Today</h4>
-                        <h2>Discount Up to 40% Only for this Month.</h2>
-                        <a href="#" class="btn cs-btn dstc-btn">Contact us</a>
-                    </div>
-                </div>
+          <div class="row process-row align-items-center">
+            <div class="col-lg-6">
+              <div class="process-content" id="process-content">
+                <h5>
+                  <span
+                    ><img
+                      src="images/process1Icon.png"
+                      height="20px"
+                      width="20px"
+                      alt="" /></span
+                  >Move in
+                </h5>
+                <h2>Unpack your stuff</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elittellus, luctus nec ullamcorper mattis, pulvinar.
+                </p>
+                <ul>
+                  <li>
+                    <span
+                      ><img
+                        src="images/check.svg"
+                        height="16px"
+                        width="16px"
+                        alt="" /></span
+                    >Nostra gravida dui a
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="images/check.svg"
+                        height="16px"
+                        width="16px"
+                        alt="" /></span
+                    >Habitasse praesent natoque etiam
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="images/check.svg"
+                        height="16px"
+                        width="16px"
+                        alt="" /></span
+                    >Turpis fames egestas sociosqu
+                  </li>
+                  <li>
+                    <span
+                      ><img
+                        src="images/check.svg"
+                        height="16px"
+                        width="16px"
+                        alt="" /></span
+                    >Consectetuer consequat ultrices erat
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div class="col-lg-6">
+              <div class="process-img">
+                <img src="images/process4.jpg" class="img-fluid w-100" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- discount end -->
-     <!-- insight start -->
-     <section id="insight" class="ct-60 cb-120">
+      </section>
+      <!-- process4 end -->
+      <!-- discount start -->
+      <section id="discount">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-6 mx-auto">
-                    <div class="insight-heading c-gap">
-                        <h5>Insight</h5>
-                        <h2>Moving Tips & Guide</h2>
-                        <hr class="hr-testimonial hr-line">
-                    </div>
-                </div>
+          <div class="row dicount-row align-items-center">
+            <div class="col-lg-6">
+              <div class="discount-content c-gap">
+                <h4>Plan Your Move Today</h4>
+                <h2>Discount Up to 40% Only for this Month.</h2>
+                <a href="#" class="btn cs-btn dstc-btn">Contact us</a>
+              </div>
             </div>
-            <div class="row insight-row gap-md-5 gap-lg-0">
-                <div class="col-lg-4">
-                    <div class="insight-single h-100">
-                        <a href="#" class="insight-image">
-                            <img src="images/displeased-man-calling-for-help-with-moving-house.png"
-                                class="img-fluid" alt="displeased man calling for help with moving house">
-                        </a>
-                        <div class="insight-content c-gap">
-                            <a href="#">New Home Moving Day Tips</a>
-                            <h6>December 18, 2021</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                dolor. Aenean massa.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="insight-single h-100">
-                        <a href="#" class="insight-image">
-                            <img src="images/family-moving-house.png" class="img-fluid" alt="family moving house">
-                        </a>
-                        <div class="insight-content c-gap">
-                            <a href="#">Best Tips for Moving in Winter</a>
-                            <h6>December 18, 2021</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                dolor. Aenean massa.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="insight-single h-100">
-                        <a href="#" class="insight-image">
-                            <img src="images/two-young-movers-in-blue-uniform-working-indoors-in-the-room.png"
-                                class="img-fluid"
-                                alt="two young movers in blue uniform working indoors in the room">
-                        </a>
-                        <div class="insight-content c-gap">
-                            <a href="#">The Only Moving Supplies List You’ll Ever Need</a>
-                            <h6>December 18, 2021</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                dolor. Aenean massa.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
-    <!-- insight end -->
-     
-        <!-- sponsor start -->
-        <section id="sponsor">
-            <div class="container">
-                <div class="row sponsor-row">
-                    <div class="col-lg-2 col-4">
-                        <div class="sponsor-single">
-                            <img src="images/asgardia.png" class="img-fluid" alt="asgardia">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-4">
-                        <div class="sponsor-single">
-                            <img src="images/code-lab.png" class="img-fluid" alt="code lab">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-4">
-                        <div class="sponsor-single">
-                            <img src="images/earth-two.png" class="img-fluid" alt="earth two point zero">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-4">
-                        <div class="sponsor-single">
-                            <img src="images/asgardia.png" class="img-fluid" alt="asgardia">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-4">
-                        <div class="sponsor-single">
-                            <img src="images/fox-hub.png" class="img-fluid" alt="fox hub">
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-4">
-                        <div class="sponsor-single">
-                            <img src="images/velocity-9.png" class="img-fluid" alt="velocity 9">
-                        </div>
-                    </div>
-                </div>
+      </section>
+      <!-- discount end -->
+      <!-- insight start -->
+      <section id="insight" class="ct-60 cb-120">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-6 mx-auto">
+              <div class="insight-heading c-gap">
+                <h5>Insight</h5>
+                <h2>Moving Tips & Guide</h2>
+                <hr class="hr-testimonial hr-line" />
+              </div>
             </div>
-        </section>
-        <!-- sponsor end -->
-        <!-- quote end -->
-        <section id="quote">
-            <div class="container">
-                <div class="row quote-row">
-                    <div class="col-lg-10 col-12">
-                        <div class="quote-content">
-                            <h3>Request Your Moving Quote Today.</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-12">
-                        <div class="qoute-cta">
-                            <a href="" class="btn cs-btn">Get a Quote</a>
-                        </div>
-                    </div>
+          </div>
+          <div class="row insight-row gap-md-5 gap-lg-0">
+            <div class="col-lg-4">
+              <div class="insight-single h-100">
+                <a href="#" class="insight-image">
+                  <img
+                    src="images/displeased-man-calling-for-help-with-moving-house.png"
+                    class="img-fluid"
+                    alt="displeased man calling for help with moving house"
+                  />
+                </a>
+                <div class="insight-content c-gap">
+                  <a href="#">New Home Moving Day Tips</a>
+                  <h6>December 18, 2021</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa.
+                  </p>
                 </div>
-        </section>
-        <!-- quote end -->
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="insight-single h-100">
+                <a href="#" class="insight-image">
+                  <img
+                    src="images/family-moving-house.png"
+                    class="img-fluid"
+                    alt="family moving house"
+                  />
+                </a>
+                <div class="insight-content c-gap">
+                  <a href="#">Best Tips for Moving in Winter</a>
+                  <h6>December 18, 2021</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="insight-single h-100">
+                <a href="#" class="insight-image">
+                  <img
+                    src="images/two-young-movers-in-blue-uniform-working-indoors-in-the-room.png"
+                    class="img-fluid"
+                    alt="two young movers in blue uniform working indoors in the room"
+                  />
+                </a>
+                <div class="insight-content c-gap">
+                  <a href="#">The Only Moving Supplies List You’ll Ever Need</a>
+                  <h6>December 18, 2021</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- insight end -->
+
+      <!-- sponsor start -->
+      <section id="sponsor">
+        <div class="container">
+          <div class="sponsor overflow-hidden">
+            <ul class="d-flex ps-0 main-sponsor-images justify-content-around">
+              <li>
+                <a href="#"><img src="images/asgardia.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/code-lab.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/treva.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/earth-two.png" /></a>
+              </li>
+
+              <li>
+                <a href="#"><img src="images/fox-hub.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/velocity-9.png" /></a>
+              </li>
+            </ul>
+            <ul
+              class="d-flex ps-0 absolue-sponsor-images justify-content-around"
+            >
+              <li>
+                <a href="#"><img src="images/asgardia.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/code-lab.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/treva.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/earth-two.png" /></a>
+              </li>
+
+              <li>
+                <a href="#"><img src="images/fox-hub.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/velocity-9.png" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- sponsor end -->
+      <!-- quote end -->
+      <section id="quote">
+        <div class="container">
+          <div class="row quote-row">
+            <div class="col-lg-10 col-12">
+              <div class="quote-content">
+                <h3>Request Your Moving Quote Today.</h3>
+              </div>
+            </div>
+            <div class="col-lg-2 col-12">
+              <div class="qoute-cta">
+                <a href="" class="btn cs-btn">Get a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- quote end -->
     </main>
     <!-- main end -->
     <!-- footer start -->
     <footer id="footer">
-        <div class="container">
-            <div class="row footer-row">
-                <div class="col-lg-3">
-                    <div class="footer-col-1 c-gap">
-                        <div class="footer-image">
-                            <img src="images/gomo-footer-logo.png" class="img-fluid" alt="gomo footer logo">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa.</p>
-                        <div class="footer-social c-gap">
-                            <a href="#"><img src="images/facebook.svg" class="img-fluid" alt="facebook icon"></a>
-                            <a href="#"><img src="images/instragram.svg" class="img-fluid" alt="instragram icon"></a>
-                            <a href="#"><img src="images/linkedin.svg" class="img-fluid" alt="linkedin icon"></a>
-                            <a href="#"><img src="images/twitter.svg" class="img-fluid" alt="twitter icon"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="footer-col-2 c-gap">
-                        <h6>Service</h6>
-                        <ul class="footer-list c-gap">
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Long Distance
-                                    Movers</a></li>
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Small
-                                    Moves</a></li>
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Local
-                                    Moves</a></li>
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">International
-                                    Moves</a></li>
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Corporate
-                                    Moves</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="footer-col-3 c-gap">
-                        <h6>Corporate Moves</h6>
-                        <ul class="footer-list c-gap">
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">About Us</a>
-                            </li>
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Leadership</a>
-                            </li>
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Careers</a>
-                            </li>
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Article &
-                                    News</a></li>
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Legal
-                                    Notice</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="footer-col-4 c-gap">
-                        <h6>Support</h6>
-                        <ul class="footer-list c-gap">
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Help
-                                    Center</a></li>
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Ticket
-                                    Support</a></li>
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">My Account</a>
-                            </li>
-                            <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row footer-row">
+          <div class="col-lg-3">
+            <div class="footer-col-1 c-gap">
+              <div class="footer-image">
+                <img
+                  src="images/gomo-footer-logo.png"
+                  class="img-fluid"
+                  alt="gomo footer logo"
+                />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa.
+              </p>
+              <div class="footer-social c-gap">
+                <a href="#"
+                  ><img
+                    src="images/facebook.svg"
+                    class="img-fluid"
+                    alt="facebook icon"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="images/instragram.svg"
+                    class="img-fluid"
+                    alt="instragram icon"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="images/linkedin.svg"
+                    class="img-fluid"
+                    alt="linkedin icon"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="images/twitter.svg"
+                    class="img-fluid"
+                    alt="twitter icon"
+                /></a>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-col-2 c-gap">
+              <h6>Service</h6>
+              <ul class="footer-list c-gap">
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">Long Distance Movers</a>
+                </li>
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">Small Moves</a>
+                </li>
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">Local Moves</a>
+                </li>
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">International Moves</a>
+                </li>
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">Corporate Moves</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-col-3 c-gap">
+              <h6>Corporate Moves</h6>
+              <ul class="footer-list c-gap">
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">About Us</a>
+                </li>
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">Leadership</a>
+                </li>
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">Careers</a>
+                </li>
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">Article & News</a>
+                </li>
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">Legal Notice</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-col-4 c-gap">
+              <h6>Support</h6>
+              <ul class="footer-list c-gap">
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">Help Center</a>
+                </li>
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">Ticket Support</a>
+                </li>
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">My Account</a>
+                </li>
+                <li>
+                  <img
+                    src="images/circle.svg"
+                    class="img-fluid"
+                    alt="circle"
+                  /><a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- footer end -->
     <!-- copyright start -->
     <section id="copyright">
-        <div class="container">
-            <div class="row copyright-row align-items-center">
-                <div class="col-lg-6 col-12">
-                    <div class="copyright-content c-gap">
-                        <p>Copyright &copy; 2021 <a href="#">Gomo</a>, All rights reserved. Powered by MoxCreative.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12">
-                    <ul class="copyright-list c-gap">
-                        <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Term of use</a>
-                        </li>
-                        <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Privacy policy</a>
-                        </li>
-                        <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Cookie policy</a>
-                        </li>
-                        <li><img src="images/circle.svg" class="img-fluid" alt="circle"><a href="#">Sitemap</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row copyright-row align-items-center">
+          <div class="col-lg-6 col-12">
+            <div class="copyright-content c-gap">
+              <p>
+                Copyright &copy; 2021 <a href="#">Gomo</a>, All rights reserved.
+                Powered by MoxCreative.
+              </p>
             </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <ul class="copyright-list c-gap">
+              <li>
+                <img src="images/circle.svg" class="img-fluid" alt="circle" /><a
+                  href="#"
+                  >Term of use</a
+                >
+              </li>
+              <li>
+                <img src="images/circle.svg" class="img-fluid" alt="circle" /><a
+                  href="#"
+                  >Privacy policy</a
+                >
+              </li>
+              <li>
+                <img src="images/circle.svg" class="img-fluid" alt="circle" /><a
+                  href="#"
+                  >Cookie policy</a
+                >
+              </li>
+              <li>
+                <img src="images/circle.svg" class="img-fluid" alt="circle" /><a
+                  href="#"
+                  >Sitemap</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
     <!-- copyright end -->
     <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
