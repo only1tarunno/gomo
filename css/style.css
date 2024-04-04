@@ -422,7 +422,10 @@ a.topinfo-content {
 /* discount end */
 /* choose start */
 #choose {
-  background-color: #fcfcfc;
+  background: url(../images/chooseBg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .choose-heading {
   gap: 20px 0;
@@ -643,7 +646,10 @@ ul li {
 
 /* banner  */
 #banner {
-  background-color: #0071c5;
+  background: url(../images/subBanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .banner-row {
   padding: 80px 0;
@@ -757,6 +763,42 @@ ul li {
 
 /* single service end  */
 
+/*----------------------- movingPlanner page start ---------------------------------------- */
+#process {
+  background: url(../images/chooseBg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.process-content {
+  margin: 0 0 0 60px;
+}
+#process-content {
+  margin: 0 60px 0 0px;
+}
+.process-content h5 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.process-content h2 {
+  margin: 20px 0;
+  max-width: 570px;
+}
+
+.process-content ul {
+  padding-left: 0;
+}
+.process-content ul li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #54595f;
+}
+
 /* -------------------contact page start ----------------------- */
 .form-content {
   background-color: #ffffff;
@@ -800,4 +842,8 @@ form label {
   color: #54595f;
   display: block;
   text-decoration: none;
+}
+
+#map iframe {
+  display: block;
 }
