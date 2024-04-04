@@ -1070,3 +1070,55 @@ form label {
 .hr-line {
   margin: auto;
 }
+
+/* -----------------------------Faq page ------------------------ */
+.call {
+  border: 2px solid #0071c5;
+  border-radius: 5px;
+  padding: 34px;
+}
+.call-content h5,
+.faqfeature-content h5 {
+  color: #54595f;
+  font-weight: 600;
+}
+.call-content a {
+  text-decoration: none;
+  color: #7fca35;
+  font-weight: 600;
+  font-size: 28px;
+}
+.single-faqfeature {
+  display: flex;
+  gap: 20px;
+  border: 2px solid #c7cdd1;
+  padding: 34px;
+  border-radius: 5px;
+  margin-top: 25px;
+  transition: 0.3s all ease-in-out;
+}
+
+.single-faqfeature:hover {
+  background-color: #7fca354f;
+  border: 2px solid #7fca35;
+  transition: 0.3s all ease-in-out;
+}
+
+.accordion-button {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 28px;
+  padding-left: 0;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+.accordion-body {
+  padding-left: 0;
+}
+.accordion-item {
+  border: 1px solid #f5f8fc;
+}
