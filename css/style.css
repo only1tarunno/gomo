@@ -101,7 +101,7 @@ p {
 }
 a.topinfo-content {
   color: #ffffff;
-  font-size: calc(clamp(0.938rem, 0.223vw + 0.857rem, 1.125rem));
+  font-size: calc(clamp(0.438rem, 0.446vw + 0.277rem, 0.813rem));
   font-weight: 500;
   transition: all 0.3s ease;
 }
@@ -680,6 +680,10 @@ ul li {
 .banner-row p {
   color: #fff;
 }
+.banner-row p a {
+  color: #fff;
+  text-decoration: none;
+}
 .banner-row h2 {
   color: #fff;
   font-weight: 600;
@@ -706,6 +710,18 @@ ul li {
   height: 2px;
   bottom: 0;
   left: 0;
+}
+.modal-dialog {
+  max-width: 868px;
+}
+.about-video {
+  position: relative;
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* about end  */
 /* services start */
