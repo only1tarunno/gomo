@@ -516,21 +516,39 @@ a.topinfo-content {
 }
 .insight-single {
   border-radius: 5px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+.insight-image {
+  display: block;
+  overflow: hidden;
+  border-radius: 5px 5px 0px 0px;
+}
+.insight-single:hover .insight-image img {
+  transition: 0.6s all ease-in-out;
+  transform: scale(1.1);
+  border-radius: 5px 5px 0px 0px;
 }
 .insight-image img {
   border-radius: 5px 5px 0px 0px;
   min-width: 100%;
+
+  transition: 0.6s all ease-in-out;
 }
-.insight-single {
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
-}
+
 .insight-content {
   padding: 34px 32px;
   gap: 13px;
 }
-.insight-content h5 {
+.insight-content a {
   font-weight: 600;
   color: #333c44;
+  font-size: 21px;
+  text-decoration: none;
+  transition: 0.3 all ease-in-out;
+}
+.insight-content a:hover {
+  color: #81b441;
+  transition: 0.3 all ease-in-out;
 }
 .insight-content h6 {
   font-size: 13px;
