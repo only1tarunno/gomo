@@ -239,6 +239,11 @@ a.topinfo-content {
   border-radius: 5px;
   gap: 16px 0;
   padding: 32px;
+  transition: 0.3s all ease-in-out;
+}
+.features-single:hover {
+  background-color: #f2f6fc;
+  transition: 0.3s all ease-in-out;
 }
 .features-icon {
   max-width: 35px;
@@ -356,6 +361,12 @@ a.topinfo-content {
   padding: 40px;
   margin-bottom: 0;
   justify-content: end;
+  transition: 0.6s all ease-in-out;
+  backface-visibility: hidden;
+}
+.service-single:hover {
+  background-size: 110%;
+  transition: 0.6s all ease-in-out;
 }
 .service-single h6 {
   color: #ffffff;
@@ -868,6 +879,11 @@ form label {
   padding: 40px;
   border-radius: 5px;
   margin-bottom: 30px;
+  transition: 0.3s all ease-in-out;
+}
+.location-card:hover {
+  background-color: #f2f6fc;
+  transition: 0.3s all ease-in-out;
 }
 
 .location-card h3 {
