@@ -224,6 +224,7 @@ a.topinfo-content {
 }
 .hero-content h1 {
   color: #ffffff;
+  max-width: 560px;
 }
 .hero-content p {
   color: #ffffff;
@@ -271,6 +272,26 @@ a.topinfo-content {
 .about-content {
   align-items: flex-start;
   gap: 20px 0;
+}
+.about-image {
+  position: relative;
+  text-align: end;
+}
+.aboutTop {
+  max-width: 200px;
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+  left: 90px;
+}
+.aboutmain {
+  max-width: 592px;
+}
+.aboutbottom {
+  max-width: 280px;
+  position: absolute;
+  bottom: -90px;
+  right: -40px;
 }
 /* about end */
 /* achivement start */
@@ -442,13 +463,17 @@ a.topinfo-content {
 /* discount end */
 /* choose start */
 #choose {
-  background: url(../images/chooseBg.jpg);
+  background: url(../images/chooseBg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .choose-heading {
   gap: 20px 0;
+}
+.choose-heading h2 {
+  max-width: 570px;
+  margin: auto;
 }
 .choose-row {
   margin-top: 80px;
@@ -834,7 +859,7 @@ ul li {
 
 /*----------------------- movingPlanner page start ---------------------------------------- */
 #process {
-  background: url(../images/chooseBg.jpg);
+  background: url(../images/chooseBg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -939,7 +964,7 @@ form label {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../images/chooseBg.jpg);
+  background: url(../images/chooseBg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

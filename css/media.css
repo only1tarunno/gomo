@@ -1,7 +1,6 @@
 @media (max-width: 1740px) {
   .choose-heading h2 {
     max-width: 534px;
-    margin: auto;
   }
 }
 @media (max-width: 1460px) {
@@ -22,6 +21,9 @@
   .location-card {
     padding: 20px;
   }
+  .aboutTop {
+    left: -8px;
+  }
 }
 @media (max-width: 1180px) {
   .offcanvas {
@@ -38,6 +40,14 @@
   }
   .company-heading h2 {
     max-width: 310px;
+  }
+  .aboutmain {
+    max-width: 486px;
+  }
+  .aboutTop {
+    max-width: 160px;
+    top: -30px;
+    left: 2px;
   }
 }
 
@@ -71,6 +81,17 @@
 
   .call {
     padding: 20px;
+  }
+  .about-image {
+    position: relative;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .aboutTop {
+    left: 58px;
+  }
+  .hero-content h1 {
+    max-width: 530px;
   }
 }
 @media (max-width: 767.98px) {
@@ -138,5 +159,20 @@
     font-size: 14px;
     color: #ffffff;
     padding: 15px 32px;
+  }
+  .aboutTop {
+    left: -34px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .aboutTop {
+    display: none;
+  }
+  .aboutbottom {
+    display: none;
+  }
+  .aboutmain {
+    max-width: 100%;
   }
 }
