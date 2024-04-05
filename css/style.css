@@ -758,7 +758,7 @@ ul li {
   margin: 0 auto;
 }
 .company-heading2 h2 {
-  max-width: 426px;
+  max-width: 395px;
   position: relative;
   padding-bottom: 20px;
 }
@@ -776,6 +776,9 @@ ul li {
 }
 .about-video {
   position: relative;
+}
+.about-video img {
+  cursor: pointer;
 }
 .play-btn {
   position: absolute;
