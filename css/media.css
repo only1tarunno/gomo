@@ -1,3 +1,14 @@
+@media (max-width: 1740px) {
+  .choose-heading h2 {
+    max-width: 534px;
+    margin: auto;
+  }
+}
+@media (max-width: 1460px) {
+  .discount-content h2 {
+    max-width: 450px;
+  }
+}
 @media (max-width: 1399px) {
   #testimonial-content {
     margin-top: -432px;
@@ -24,6 +35,9 @@
   }
   #testimonial-content {
     margin-top: 60px;
+  }
+  .company-heading h2 {
+    max-width: 310px;
   }
 }
 

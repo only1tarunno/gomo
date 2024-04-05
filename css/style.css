@@ -10,6 +10,9 @@ body {
   font-family: "Heebo", sans-serif;
   overflow-x: hidden;
 }
+h6 {
+  margin: 0;
+}
 h1,
 h2,
 h3,
@@ -307,7 +310,7 @@ a.topinfo-content {
 }
 
 .company-heading h2 {
-  max-width: 60%;
+  max-width: 338px;
   position: relative;
   padding-bottom: 20px;
 }
@@ -371,9 +374,9 @@ a.topinfo-content {
 .service-single h6 {
   color: #ffffff;
 }
-.service-single a {
+/* .service-single a {
   margin-top: 20px;
-}
+} */
 .svrc-btn {
   width: 200px;
 }
@@ -422,6 +425,7 @@ a.topinfo-content {
   position: relative;
   color: #ffffff !important;
   padding-bottom: 20px;
+  max-width: 500px;
 }
 .discount-content h2::before {
   content: "";
@@ -456,6 +460,10 @@ a.topinfo-content {
 .choose-single {
   padding: 32px;
   gap: 16px;
+}
+.choose-content p {
+  max-width: 200px;
+  margin: 0 auto;
 }
 /* choose end  */
 /* testimonial start  */
@@ -495,6 +503,7 @@ a.topinfo-content {
   height: 0px;
   border: none;
   border-top: 4px solid #81b441;
+  margin-top: 0;
 }
 .testimonial-para {
   justify-content: space-between;
@@ -603,6 +612,13 @@ a.topinfo-content {
   flex-direction: row;
   gap: 0 5px;
 }
+.footer-social a img {
+  transition: 0.3s all ease-in-out;
+}
+.footer-social a img:hover {
+  transform: scale(1.1);
+  transition: 0.3s all ease-in-out;
+}
 .footer-col-2,
 .footer-col-3,
 .footer-col-4 {
@@ -659,6 +675,9 @@ ul li {
   flex-direction: row;
   justify-content: end;
   gap: 0 20px;
+}
+.copyright-list li:hover {
+  text-decoration: underline;
 }
 .copyright-content {
   flex-direction: row;
