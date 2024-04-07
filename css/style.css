@@ -199,8 +199,10 @@ a.topinfo-content {
   color: var(--gray);
 }
 .offcanvas-body {
-  overflow-x: hidden;
   position: relative;
+}
+.dropdown-menu {
+  border: none;
 }
 .oc-copy {
   position: absolute;
